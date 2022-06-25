@@ -4,15 +4,15 @@ const getOwo = () => {
     if (elements[i].nodeName === 'STYLE' || elements[i].nodeName === 'SCRIPT') {
       continue
     }
-    const child = elements?.[i]?.childNodes?.[0]
-    if (child?.nodeType === 3) {
-      child.textContent =
-        child.textContent
-          ?.replaceAll('l', 'w')
-          .replaceAll('L', 'W')
-          .replaceAll('r', 'w')
-          .replaceAll('R', 'W') || child.textContent
-    }
+    // const child = elements?.[i]?.childNodes?.[0]
+    // if (child?.nodeType === 3) {
+    //   child.textContent =
+    //     child.textContent
+    //       ?.replaceAll('l', 'w')
+    //       .replaceAll('L', 'W')
+    //       .replaceAll('r', 'w')
+    //       .replaceAll('R', 'W') || child.textContent
+    // }
   }
 }
 getOwo()

@@ -4,33 +4,27 @@
 <head>
   <meta charset="utf-8" />
   <title>The Content Farm Terminator!</title>
-  <link rel="stylesheet" type="text/css" href="/css/popup.css" />
-  <script src="/scripts/popup.js" defer></script>
+  <link rel="stylesheet" type="text/css" href="/style.css" />
+  <!-- <script src="/scripts/popup.js" defer></script> -->
 </head>
 
 <body>
-  <!-- text area -->
-  <div class="editor-wrapper">
-    <textarea rows="6" cols="70" id="txtArea" autocomplete="off" autocorrect="off" autocapitalize="off"
-      spellcheck="false" placeholder="__MSG_areaPlaceholder__"></textarea>
+  <h1>Engwish setting</h1>
+  <img src="/img/skittlechan.jpeg" alt="skittlechan" width="100" />
+  <div class="flex_row">
+    <span>Activate input</span>
+    <label class="switch">
+      <input type="checkbox" />
+      <span class="slider round"></span>
+    </label>
   </div>
-
-  <!-- button bar -->
-  <div class="buttons-wrapper">
-    <div class="buttons-left">
-      <button id="btnAdd">__MSG_btnAdd__</button>
-      <button id="btnDelete">__MSG_btnDelete__</button>
-      <button id="btnViewAll">__MSG_btnView__</button>
-    </div>
-    <div class="buttons-right">
-      <a href="https://github.com/wdzeng/the-content-farm-terminator" target="_blank">
-        <img src="/images/github.png" title="Github Page" height="24px" />
-      </a>
-    </div>
+  <div class="flex_row">
+    <span>Activate for all display content</span>
+    <label class="switch">
+      <input type="checkbox" />
+      <span class="slider round"></span>
+    </label>
   </div>
-
-  <!-- hint text-->
-  <div id="hint"></div>
 </body>
 
 </html>

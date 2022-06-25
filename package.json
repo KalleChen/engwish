@@ -6,7 +6,8 @@
   "scripts": {
     "lint": "eslint src",
     "dev": "webpack --watch --mode production",
-    "build:chrome": "webpack --mode production && cp src/manifest-chrome.json dist/manifest.json"
+    "copy": "cp src/*.html dist && cp src/*.css dist && cp -r src/img/ dist/img/",
+    "build:chrome": "webpack --mode production && cp src/manifest-chrome.json dist/manifest.json && pnpm copy"
   },
   "homepage": "https://github.com/KalleChen/engwish",
   "repository": {
