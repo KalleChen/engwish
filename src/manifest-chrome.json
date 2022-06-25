@@ -1,8 +1,12 @@
 {
   "name": "Engwish",
-  "description": "Start typing in Engwish",
-  "version": "1.0",
+  "description": "Enter the Engwish World",
+  "version": "1.0.0",
+  "author": "Kalle Chen",
   "manifest_version": 3,
+  "permissions": [
+    "storage"
+  ],
   "icons": {
     "16": "/img/skittlechan_16x16.png",
     "32": "/img/skittlechan_32x32.png",
@@ -11,8 +15,12 @@
   },
   "content_scripts": [
     {
-      "js": ["/scripts/contentScript.js"],
-      "matches": ["<all_urls>"]
+      "js": [
+        "/scripts/contentScript.js"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
     }
   ],
   "action": {

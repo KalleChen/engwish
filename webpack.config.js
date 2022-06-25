@@ -3,6 +3,7 @@ const path = require('path')
 module.exports = {
   entry: {
     contentScript: './src/scripts/contentScript.ts',
+    popup: './src/scripts/popup.ts',
   },
   output: {
     filename: 'scripts/[name].js',
