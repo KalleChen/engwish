@@ -1,0 +1,9 @@
+{
+  "extends": [
+    "kalle/typescript"
+  ],
+  "ignorePatterns": [
+    "node_modules",
+    "dist"
+  ]
+}
