@@ -39,6 +39,11 @@ const getInputOwo = async () => {
     }
     for (let i = 0; i < inputs.length; i++) {
       inputs[i].addEventListener('input', updateValue)
+      inputs[i].placeholder = inputs[i].placeholder
+        ?.replaceAll('l', 'w')
+        .replaceAll('L', 'W')
+        .replaceAll('r', 'w')
+        .replaceAll('R', 'W')
     }
   } else {
     storage.sync.set({ inputCheck: true })
